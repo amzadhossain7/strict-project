@@ -126,23 +126,23 @@ nav ul li a {
 
 .details {
     width: 100%;
-    height: 400px;
+    /* height: 400px; */
     background: rgb(246, 249, 249);
 }
 .details_main {
     width: 70%;
     margin: auto;
     text-align: center;
-    padding: 60px 0px;
+    padding: 80px 0px 120px;
 }
 .details_main h1 {
     text-transform: none;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     font-size: 40px;
     font-weight: 500;
     color: rgb(45, 57, 80);
     font-family: Lato, sans-serif;
-    margin-top: 50px;
+    margin-top:  20px;
 }
 .details_main p {
     color: rgb(153, 153, 153);
@@ -322,7 +322,7 @@ nav ul li a {
 }
 .zoom {
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -344,6 +344,7 @@ nav ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 .zoom a:hover{
     background-color:rgb(21, 164, 250) ;
@@ -353,18 +354,22 @@ nav ul li a {
 .work:hover .zoom {
     opacity: 1;
     transition: all 0.5s ease-in-out 0s;
+    top: 50%;
 }
 .work_left:hover .zoom {
     opacity: 1;
     transition: all 0.5s ease-in-out 0s;
+    top: 50%;
 }
 .work_top:hover .zoom {
     opacity: 1;
     transition: all 0.5s ease-in-out 0s;
+    top: 50%;
 }
 .work_bottom:hover .zoom {
     opacity: 1;
     transition: all 0.5s ease-in-out 0s;
+    top: 50%;
 }
 
         /* gallary css end*/
@@ -494,27 +499,29 @@ input[type="checkbox"] {
     margin: 0px;
 }
 .media ul li {
+
     width: 35px;
     height: 35px;
     background: rgb(21, 164, 250);
     text-align: center;
     line-height: 35px;
-    color: white;
     border: 3px solid rgb(21, 164, 250);
     border-radius: 5px;
     font-size: 18px;
+    transition: 0.3s all ease-in-out;
+    
 }
 .media ul li a {
     color: white;
+    transition: 0.3s all ease-in-out; 
+    display: block;
 }
 .media ul li a:hover{
     color:rgb(21, 164, 250);
-    opacity: 1;
-    transition: 0.5s all ease-in-out; 
+    
 }
 .media ul li:hover{
-    background-color: white;
-    transition: 0.5s ease-in-out;
+    background-color:transparent;
 }
 
         /* footer css end*/
