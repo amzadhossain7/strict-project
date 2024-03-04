@@ -3,11 +3,12 @@
     padding: 0%;
 }
 
+        /* header css start*/
+
 header {
     background: rgb(249, 249, 249);
     height: 100px;
 }
-
 .wraper {
     width: 80%;
     margin: auto;
@@ -20,15 +21,12 @@ header {
     align-items: center;
     padding: 29px 0px;
 }
-
 .logo {
     width: 20%;
 }
-
 nav {
     width: 50%;
 }
-
 nav ul {
     display: flex;
     list-style: none;
@@ -37,22 +35,21 @@ nav ul {
     font-family: Lato, sans-serif;
     font-weight: 700;
 }
-
 nav ul li {
     margin-right: 60px;
 }
-
 nav ul li a {
     text-decoration: none;
-    color: #2d3950;
+    color: rgb(45, 57, 80);
 }
+
+        /* header css end*/
+
+        /* banner css start*/
 
 .banner {
     position: relative;
-    
-
 }
-
 .banner_content {
     position: absolute;
     left: 50%;
@@ -61,12 +58,10 @@ nav ul li a {
     text-align: center;
     width: 30%;
 }
-
 .banner img {
     width: 100%;
     display: block;
 }
-
 .banner_content h1 {
     text-transform: uppercase;
     font-size: 100px;
@@ -75,14 +70,12 @@ nav ul li a {
     font-weight: 600;
     font-family: Lato, sans-serif;
 }
-
 .banner_content h3 {
     color: rgb(255, 255, 255);
     font-weight: 400;
     margin-bottom: 70px;
     font-family: Lato, sans-serif;
 }
-
 .banner_content span {
     display: block;
     width: 100%;
@@ -90,7 +83,6 @@ nav ul li a {
     background: rgb(21, 164, 250);
     margin-bottom: 40px;
 }
-
 .banner_content button {
     background: transparent;
     border: 1px solid rgb(21, 164, 250);
@@ -101,49 +93,48 @@ nav ul li a {
     border-radius: 4px;
     font-weight: 400;
 }
-
 .arrow {
     position: absolute;
     bottom: 100px;
     left: 50%;
     transform: translate(-50%, 0px);
     color: white;
-    animation: 1s updown linear infinite alternate;
+    animation: 1s linear 0s infinite alternate none running updown;
     font-size: 25px;
 }
-
 @keyframes updown {
-    0%{
+    0% {
         bottom: 130px;
     }
-    100%{
+
+    100% {
         bottom: 100px;
     }
 }
-
-
 .arrow a {
     color: white;
 }
-
 .banner_content button:hover {
     background-color: rgb(21, 164, 250);
     transition: all 0.5s ease-in-out 0s;
 }
+
+        /* banner css end*/
+
+        /* content css start*/
+
 
 .details {
     width: 100%;
     height: 400px;
     background: rgb(246, 249, 249);
 }
-
 .details_main {
     width: 70%;
     margin: auto;
     text-align: center;
     padding: 60px 0px;
 }
-
 .details_main h1 {
     text-transform: none;
     margin-bottom: 25px;
@@ -153,96 +144,377 @@ nav ul li a {
     font-family: Lato, sans-serif;
     margin-top: 50px;
 }
-
 .details_main p {
     color: rgb(153, 153, 153);
-    margin: 0px 150px;
+    margin: 0px 111px;
     font-size: 20px;
-    font-weight: 100;
+    font-weight: 400;
     font-family: Lato, sans-serif;
 }
-.icon_wraper{
+.icon_wraper {
     display: flex;
-    justify-content:space-between ;
+    justify-content: space-between;
 }
-
-.phone_icon{
+.phone_icon {
     text-align: center;
     width: 30%;
     margin: 100px 0px;
 }
-.phone_icon i{
+.phone_icon i {
     font-size: 35px;
     margin-bottom: 20px;
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48baff+0,48baff+50,5fc3ff+50,5fc3ff+100 */
-    background: linear-gradient(to right,  #48baff 0%,#48baff 50%,#5fc3ff 50%,#5fc3ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: linear-gradient(to right, rgb(72, 186, 255) 0%,
+                rgb(72, 186, 255) 50%, rgb(95, 195, 255) 50%,
+                rgb(95, 195, 255) 100%);
     padding: 25px 33px;
     color: white;
     width: 30px;
     height: 40px;
 }
-.phone_icon h2{
+.phone_icon h2 {
     text-transform: capitalize;
-    color: #2d3950;
+    color: rgb(45, 57, 80);
     font-size: 25px;
     font-weight: 400;
     font-family: Lato, sans-serif;
 }
-.phone_icon p{
-    color: #999999;
+.phone_icon p {
+    color: rgb(153, 153, 153);
     font-family: Lato, sans-serif;
     font-weight: 200;
     margin: 15px 65px;
 }
 
-.work_section{
-    background: #f6f9f9;
+        /* content css end*/
+
+        /* gallary css start*/
+
+
+.work_section {
+    background: rgb(246, 249, 249);
     padding: 90px 0px;
 }
-.gallery_main h2{
+.gallary_main h2 {
     text-transform: capitalize;
     font-size: 47px;
     font-weight: 400;
     text-align: center;
     margin-bottom: 13px;
-    color: #2d3950;
+    color: rgb(45, 57, 80);
     font-family: Lato, sans-serif;
 }
-.gallery_main p {
+.gallary_main p {
     text-align: center;
     font-weight: 400;
-    color: #909090;
+    color: rgb(144, 144, 144);
     font-family: Lato, sans-serif;
     font-size: 18px;
 }
-.gallery {
+.gallary {
     margin-top: 85px;
     display: flex;
     justify-content: space-between;
-    flex-wrap:wrap ;
+    flex-wrap: wrap;
 }
-.work{
+.work {
     width: 32%;
     margin-bottom: 30px;
     position: relative;
 }
-.work img{
+.work_left {
+    width: 32%;
+    margin-bottom: 30px;
+    position: relative;
+}
+.work_top {
+    width: 32%;
+    margin-bottom: 30px;
+    position: relative;
+}
+.work_bottom {
+    width: 32%;
+    margin-bottom: 30px;
+    position: relative;
+}
+.work img {
     width: 100%;
     display: block;
+    position: relative;
+    z-index: 0;
 }
-
-.work::before{
-    content: '';
-    background-color: #25a4f2;
-    height: 0%;
+.work_left img {
     width: 100%;
-    top:0;
-    right:0;
+    display: block;
+    position: relative;
+    z-index: 0;
+}
+.work_top img {
+    width: 100%;
+    display: block;
+    position: relative;
+    z-index: 0;
+}
+.work_bottom img {
+    width: 100%;
+    display: block;
+    position: relative;
+    z-index: 0;
+}
+.work::before {
+    content: "";
+    background-color: rgb(37, 164, 242);
+    height: 100%;
+    width: 0%;
+    top: 0px;
+    right: 0px;
     position: absolute;
     opacity: 0.8;
-    transition: 0.5s  ease-in-out;
+    transition: all 0.5s ease-in-out 0s;
+    z-index: 1;
 }
-.work:hover::before{
+.work:hover::before {
+    width: 100%;
+}
+.work_left::before {
+    content: "";
+    background-color: rgb(37, 164, 242);
     height: 100%;
-
+    width: 0%;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    opacity: 0.8;
+    transition: all 0.5s ease-in-out 0s;
+    z-index: 1;
 }
+.work_left:hover::before {
+    width: 100%;
+}
+.work_top::before {
+    content: "";
+    background-color: rgb(37, 164, 242);
+    height: 0%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    opacity: 0.8;
+    transition: all 0.5s ease-in-out 0s;
+    z-index: 1;
+}
+.work_top:hover::before {
+    height: 100%;
+}
+.work_bottom::before {
+    content: "";
+    background-color: rgb(37, 164, 242);
+    height: 0%;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    opacity: 0.8;
+    transition: all 0.5s ease-in-out 0s;
+    z-index: 1;
+}
+.work_bottom:hover::before {
+    height: 100%;
+}
+.zoom {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
+    z-index: 2;
+    opacity: 0;
+}
+.zoom a {
+    height: 50px;
+    width: 50px;
+    border: 1px solid white;
+    color: white;
+    font-size: 20px;
+    display: block;
+    border-radius: 4px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.zoom a:hover{
+    background-color:rgb(21, 164, 250) ;
+    border-color: rgb(21, 164, 250);
+    transition: 0.5s ease-in-out;
+}
+.work:hover .zoom {
+    opacity: 1;
+    transition: all 0.5s ease-in-out 0s;
+}
+.work_left:hover .zoom {
+    opacity: 1;
+    transition: all 0.5s ease-in-out 0s;
+}
+.work_top:hover .zoom {
+    opacity: 1;
+    transition: all 0.5s ease-in-out 0s;
+}
+.work_bottom:hover .zoom {
+    opacity: 1;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+        /* gallary css end*/
+
+        /* form css start*/
+
+.contract_us {
+    background-image: url("../image/banner2.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 70px 0px 120px;
+    position: relative;
+    z-index: 0;
+}
+.contract_us::before {
+    content: "";
+    background-color: rgb(45, 57, 77);
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    right: 0px;
+    position: absolute;
+    opacity: 0.8;
+    z-index: -1;
+}
+.contract {
+    width: 40%;
+    margin: auto;
+    text-align: center;
+}
+.contract h1 {
+    font-size: 45px;
+    font-weight: 400;
+    color: white;
+    font-family: Lato, sans-serif;
+    margin: 40px 0px 10px;
+}
+.contract p {
+    color: rgba(153, 153, 153, 0.6);
+    font-weight: 400;
+    margin: 0px 0px 60px;
+    font-family: Lato, sans-serif;
+}
+form input {
+    width: 100%;
+    background: transparent;
+    border: 1px solid rgba(153, 153, 153, 0.6);
+    padding: 20px 0px 20px 5px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+form textarea {
+    width: 100%;
+    background: transparent;
+    border: 1px solid rgba(153, 153, 153, 0.6);
+    border-radius: 5px;
+    padding: 5px 0px 20px 5px;
+    margin-bottom: 20px;
+}
+.checker {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.checker input {
+    width: auto;
+    margin: 0px;
+    padding: 15px 60px;
+    color: white;
+    border-color: rgb(21, 164, 250);
+    font-size: 16px;
+}
+.checker_box {
+    display: flex;
+    justify-content: space-between;
+}
+.checker_box input {
+    margin: 0px;
+    color: rgb(154, 160, 170);
+    background: transparent;
+}
+.checker_box p {
+    margin: 0px 0px 0px 15px;
+    color: white;
+    font-weight: 400;
+    font-family: Lato, sans-serif;
+}
+input[type="submit"]:hover {
+    background-color: rgb(21, 164, 250);
+    transition: all 0.5s ease-in-out 0s;
+}
+input[type="checkbox"] {
+    width: 20px;
+    height: 15px;
+    line-height: normal;
+    margin: 3px 0px 0px;
+}
+
+        /* form css end*/
+
+        /* footer css start*/
+
+.footer {
+    background: rgb(249, 249, 249);
+    height: 90px;
+}
+.footer_main {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+.copy_right p {
+    color: #999999;
+}
+.media {
+    width: 14%;
+}
+.media ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.media ul li {
+    width: 35px;
+    height: 35px;
+    background: rgb(21, 164, 250);
+    text-align: center;
+    line-height: 35px;
+    color: white;
+    border: 3px solid rgb(21, 164, 250);
+    border-radius: 5px;
+    font-size: 18px;
+}
+.media ul li a {
+    color: white;
+}
+.media ul li a:hover{
+    color:rgb(21, 164, 250);
+    opacity: 1;
+    transition: 0.5s all ease-in-out; 
+}
+.media ul li:hover{
+    background-color: white;
+    transition: 0.5s ease-in-out;
+}
+
+        /* footer css end*/
